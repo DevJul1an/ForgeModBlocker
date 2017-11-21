@@ -22,7 +22,7 @@ public class ForgeModBlocker_Command implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender cs, Command cmd, String label, String[] args) {
 		if(!cs.hasPermission("forgemodblocker.forgemodblocker")) {
-			// TODO: MESSAGE
+			// TODO: No Permission message
 			return true;
 		}
 		
