@@ -1,0 +1,10 @@
+name: ForgeModBlocker
+version: 1.0.0
+author: Jul1an_K
+main: me.jul1an_k.forgemodblocker.ForgeModBlocker
+
+
+commands:
+  forgemodblocker:
+    description: Main command of ForgeModBlocker
+    aliases: [fmb]

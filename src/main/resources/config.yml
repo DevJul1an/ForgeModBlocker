@@ -1,0 +1,17 @@
+# ___                 __            
+#(_   _ _ _ /|/|   _// _)/  _ / _ _ 
+#/ ()/ (/(-/   |()(//(_)(()( /((-/  
+#     _/                            
+#
+# version 1.0.0
+# by Jul1an_K
+
+blockForge: false
+blockForgeKickMessage: '&cPlease remove Forge to join.'
+
+blockMods: true
+blockedMods:
+- classixEXE
+
+blockedModKickMessage: '&cPlease remove the following mod(s) to join:'
+blockedModListingFormat: '&8- &c%mod_name% &8(&c%mod_version%&8)'
