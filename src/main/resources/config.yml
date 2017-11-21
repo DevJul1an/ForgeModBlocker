@@ -11,7 +11,7 @@ blockForgeKickMessage: '&cPlease remove Forge to join.'
 
 blockMods: true
 blockedMods:
-- classixEXE
+- JourneyMap
 
 blockedModKickMessage: '&cPlease remove the following mod(s) to join:'
 blockedModListingFormat: '&8- &c%mod_name% &8(&c%mod_version%&8)'
