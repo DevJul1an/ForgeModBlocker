@@ -22,7 +22,7 @@ public class ForgeModBlocker_Command implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender cs, Command cmd, String label, String[] args) {
 		if(!cs.hasPermission("forgemodblocker.forgemodblocker")) {
-			cs.sendMessage("§cNo permission.");
+			cs.sendMessage("Â§cNo permission.");
 			return true;
 		}
 		
@@ -30,7 +30,7 @@ public class ForgeModBlocker_Command implements CommandExecutor {
 			if(args[0].equalsIgnoreCase("reload")) {
 				instance.reloadConfig();
 				
-				cs.sendMessage("§aReloaded config successfully.");
+				cs.sendMessage("Â§aReloaded config successfully.");
 			} else {
 				sendHelp(cs);
 			}
@@ -39,24 +39,24 @@ public class ForgeModBlocker_Command implements CommandExecutor {
 				Player target = Bukkit.getPlayer(args[1]);
 				
 				if(target == null) {
-					cs.sendMessage("§cTarget Player isn't online.");
+					cs.sendMessage("Â§cTarget Player isn't online.");
 					return true;
 				}
 				
 				Map<String, String> mods = ForgeModBlockerAPI.getMods(target);
 				
 				if(mods == null) {
-					cs.sendMessage("§cTarget Player isn't using forge.");
+					cs.sendMessage("Â§cTarget Player isn't using forge.");
 					return true;
 				}
 				
 				String string = "";
 				
 				for(String key : mods.keySet()) {
-					string += "\n§c" + key + " §8- §c" + mods.get(key);
+					string += "\nÂ§c" + key + " Â§8- Â§c" + mods.get(key);
 				}
 				
-				cs.sendMessage("§c" + target.getName() + " §7is using the following modifications:");
+				cs.sendMessage("Â§c" + target.getName() + " Â§7is using the following modifications:");
 				cs.sendMessage(string);
 			} else {
 				sendHelp(cs);
@@ -70,10 +70,10 @@ public class ForgeModBlocker_Command implements CommandExecutor {
 	
 	private void sendHelp(CommandSender cs) {
 		cs.sendMessage(" ");
-		cs.sendMessage("§7Currently there are only two commands:");
+		cs.sendMessage("Â§7Currently there are only two commands:");
 		cs.sendMessage("");
-		cs.sendMessage("§8- §c/fmb reload");
-		cs.sendMessage("§8- §c/fmb list <Player>");
+		cs.sendMessage("Â§8- Â§c/fmb reload");
+		cs.sendMessage("Â§8- Â§c/fmb list <Player>");
 		cs.sendMessage(" ");
 	}
 	
