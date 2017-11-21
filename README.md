@@ -1,5 +1,5 @@
 # ForgeModBlocker
-Bukkit/Spigot plugin for blocking Forge mods
+Bukkit/Spigot plugin for blocking/detecting Forge mods
 
 # Builds
 Pre-compiled Builds can be found here:
