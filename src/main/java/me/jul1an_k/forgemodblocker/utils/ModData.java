@@ -1,38 +1,20 @@
 package me.jul1an_k.forgemodblocker.utils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class ModData {
 	
 	private final Map<String, String> mods;
-	private String readable;
 	
-	public ModData(Map<String, String> mods) {
+	private ModData(Map<String, String> mods) {
 		this.mods = mods;
-		
-		List<String> modsWithVersions = new ArrayList<>();
-		for(Map.Entry<String, String> mod : mods.entrySet()) {
-			modsWithVersions.add(mod.getKey() + " " + mod.getValue());
-		}
-		readable = String.join(", ", modsWithVersions);
-	}
-	
-	public Set<String> getModsIds() {
-		return Collections.unmodifiableSet(mods.keySet());
 	}
 	
 	public Map<String, String> getMods() {
 		return Collections.unmodifiableMap(mods);
-	}
-	
-	public String getModsReadable() {
-		return readable;
 	}
 	
 	public static ModData getModData(byte[] data) {
