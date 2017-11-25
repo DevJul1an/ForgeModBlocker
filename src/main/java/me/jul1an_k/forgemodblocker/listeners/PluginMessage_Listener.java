@@ -33,7 +33,7 @@ public class PluginMessage_Listener implements PluginMessageListener {
 			if(instance.getConfig().getBoolean("blockLabyMod")) {
 				String kickReason = instance.getConfig().getString("blockedModKickMessage") + "\n";
 
-				kickReason += "\n" + instance.getConfig().getString("blockedModListingFormat").replace("%mod_name%", "LabyMod").replace("%mod_version%", new String(data).replace("LABYMOD ", ""));
+				kickReason += "\n" + instance.getConfig().getString("blockedModListingFormat").replace("%mod_name%", "LabyMod").replace("%mod_version%", new String(data).split(" ")[1]);
 
 				kickReason = ChatColor.translateAlternateColorCodes('&', kickReason);
 
