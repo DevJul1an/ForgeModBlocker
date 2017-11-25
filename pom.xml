@@ -6,7 +6,7 @@
 
     <groupId>me.jul1an_k</groupId>
     <artifactId>forgemodblocker</artifactId>
-    <version>1.0.1-BETA</version>
+    <version>1.0.1</version>
 
     <repositories>
         <repository>

@@ -3,11 +3,13 @@
 #/ ()/ (/(-/   |()(//(_)(()( /((-/  
 #     _/                            
 #
-# version 1.0.1-BETA
+# version 1.0.1
 # by Jul1an_K
 
 blockForge: false
 blockForgeKickMessage: '&cPlease remove Forge to join.'
+
+blockLabyMod: true
 
 blockMods: true
 blockedMods:

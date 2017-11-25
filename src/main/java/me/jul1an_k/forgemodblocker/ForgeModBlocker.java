@@ -19,7 +19,8 @@ public class ForgeModBlocker extends JavaPlugin {
 		this.getCommand("forgemodblocker").setExecutor(new ForgeModBlocker_Command(this));
 		
 		Bukkit.getMessenger().registerOutgoingPluginChannel(this, "FML|HS");
-		Bukkit.getMessenger().registerIncomingPluginChannel(this, "FML|HS", new PluginMessage_Listener());
+		Bukkit.getMessenger().registerIncomingPluginChannel(this, "FML|HS", new PluginMessage_Listener(this));
+		Bukkit.getMessenger().registerIncomingPluginChannel(this, "LABYMOD", new PluginMessage_Listener(this));
 	}
 	
 }
